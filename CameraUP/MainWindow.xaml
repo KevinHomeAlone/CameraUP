@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CameraUP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="776">
+    <Grid HorizontalAlignment="Left" Width="772" Margin="0,0,-230.4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="comboBoxCameraDevices" HorizontalAlignment="Right" Margin="0,27,168,0" VerticalAlignment="Top" Width="413"/>
+
+
+        <Button x:Name="buttonStart" Content="Start" HorizontalAlignment="Left" Margin="200,359,0,0" VerticalAlignment="Top" Width="87" Height="31" Click="buttonStart_Click"/>
+        <Border Background="Gray" Width="360" Height="270">
+            <Image x:Name="imageVideo" Stretch="Fill"/>
+        </Border>
+        <Button x:Name="buttonSnapshot" Content="Snapshot" HorizontalAlignment="Left" Margin="339,359,0,0" VerticalAlignment="Top" Width="87" Height="31" Click="buttonSnapshot_Click"/>
+
+
+
+
     </Grid>
 </Window>
